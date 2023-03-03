@@ -27,7 +27,8 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/app/weapon-tree/enhance-arrow.png"
             ],
             "styles": [
               "@angular/material/prebuilt-themes/indigo-pink.css",
