@@ -1,0 +1,96 @@
+<div [ngClass]="[compareMode ? 'weapon-compare' : 'weapon']">
+  <div class="weapon-stats weapon-section">
+    <span class="weapon-header">{{ node.name }} ID: {{ node.id }}</span>
+    <div class="weapon-info">
+      <div class="weapon-image"></div>
+      <!-- <img class="weapon-image" src="" alt=""> -->
+      <div class="weapon-attributes">
+        <ul>
+          <li>
+            <span class="attribute-info">Attack </span>
+            <div [ngClass]="[selectedNode ? 'attributes' : 'attributes-single']">
+              <span class="attribute-selected" *ngIf="selectedNode">{{ selectedNode.attack }}</span>
+              <span class="attribute-value" *ngIf="selectedNode"> > </span>
+              <span
+                class="attribute-value"
+                [ngStyle]="compareValue(selectedNode?.attack, node.attack)"
+                >{{ node.attack }}</span
+              >
+            </div>
+          </li>
+          <li>
+            <span class="attribute-info">Element</span>
+            <div [ngClass]="[selectedNode ? 'attributes' : 'attributes-single']">
+              <span *ngIf="selectedNode">{{ selectedNode.elementalAttack }}</span>
+              <span *ngIf="selectedNode"> > </span>
+              <span [ngStyle]="compareValue(selectedNode?.elementalAttack, node.elementalAttack)">{{
+                node.elementalAttack
+              }}</span>
+            </div>
+          </li>
+          <li>
+            <span class="attribute-info">CRIT%</span>
+            <div [ngClass]="[selectedNode ? 'attributes' : 'attributes-single']">
+              <span *ngIf="selectedNode">{{ selectedNode.critChance }}%</span>
+              <span *ngIf="selectedNode"> > </span>
+              <span [ngStyle]="compareValue(selectedNode?.critChance, node.critChance)"
+                >{{ node.critChance }}%</span
+              >
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="weapon-skills weapon-section">
+    <span class="weapon-header">Inherent Skills</span>
+    <ul *ngIf="node.inherentSkills.length > 0; else noSkills">
+      <li class="skill-slot" *ngFor="let skill of node.inherentSkills">
+        <span class="skill-name">{{ getSkill(skill.skillId).name }}</span>
+        <span class="skill-value">{{ skill.value }}</span>
+      </li>
+    </ul>
+  </div>
+  <div class="weapon-skills weapon-section">
+    <span class="weapon-header">Inherited Skills</span>
+    <ul
+      class="skill-slots"
+      *ngIf="node.skillSlots > 0 || node.inheritedSkills.length !== 0; else noSkills">
+      <ng-container *ngIf="node.inheritedSkills.length > 0">
+        <ng-container *ngIf="prevNode">
+          <li
+            #skillToggle
+            class="skill-slot"
+            *ngFor="let skill of node.inheritedSkills"
+            [ngClass]="[compareMode ? 'skill-enhance' : '']"
+            (click)="onSkillClick(skill, skillToggle)">
+            <span class="skill-name">{{ getSkill(skill.skillId).name }}</span>
+            <span class="skill-value">{{ skill.value }}</span>
+          </li>
+        </ng-container>
+        <ng-container *ngIf="!prevNode">
+          <li class="skill-slot" *ngFor="let skill of node.inheritedSkills">
+            <span class="skill-name">{{ getSkill(skill.skillId).name }}</span>
+            <span class="skill-value">{{ skill.value }}</span>
+          </li>
+        </ng-container>
+      </ng-container>
+      <li class="skill-slot" *ngFor="let slot of skillSlots"></li>
+    </ul>
+  </div>
+  <div class="weapon-materials weapon-section">
+    <span class="weapon-header">Required Materials</span>
+    <ul>
+      <li *ngFor="let material of node.recipe.materials" class="material-entry">
+        <span class="material-name">{{ getMaterial(material.materialId).name }}</span>
+        <span class="material-cost">{{ material.cost }}</span>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<ng-template #noSkills>
+  <ul>
+    <li class="skill-name">No Skills</li>
+  </ul>
+</ng-template>

@@ -1,0 +1,140 @@
+.container {
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+  overflow: auto;
+  cursor: grab;
+  user-select: none;
+}
+
+.tree {
+  /* GRID SIZE: Width 17, Height 16 */
+  display: grid;
+  grid-template-columns: repeat(17, 7vw);
+  grid-template-rows: repeat(16, 7vw);
+  justify-items: center;
+  align-items: center;
+  column-gap: 3rem;
+  row-gap: 3rem;
+  padding: 2rem;
+  width: max-content;
+}
+
+.tree-full {
+  /* GRID SIZE: Width 17, Height 16 */
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  column-gap: 3rem;
+  row-gap: 3rem;
+  padding: 2rem;
+  width: max-content;
+  margin: 0 auto;
+}
+
+.tree weapon-node {
+  aspect-ratio: 1;
+  z-index: 1;
+}
+
+.line-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.menu-buttons {
+  position: absolute;
+  display: flex;
+  z-index: 10;
+  bottom: 0;
+  left: 0;
+}
+
+.menu-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3vw;
+  width: 3vw;
+  margin: 1rem;
+  background-color: #131313;
+  border-radius: 10%;
+  border: none;
+  box-shadow: 0 0 10px 0 rgb(0, 0, 0);
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+
+.menu-button mat-icon {
+  transform: scale(2);
+}
+
+.menu-button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.weapon-compare {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  align-items: center;
+  gap: 2rem;
+  top: 0;
+  left: 0;
+  z-index: 15;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+}
+
+.inner-compare {
+  display: flex;
+  gap: 6vw;
+  z-index: 120;
+  margin: 10vh auto 0 auto;
+}
+
+.compare-card {
+  display: block;
+  flex-direction: column;
+  height: 70vh;
+  width: 20vw;
+}
+
+.enhance-button {
+  color: white;
+  background: linear-gradient(#907f6b, 10%, #2a2418, 90%, #907f6b) no-repeat border-box;
+  border: black 2px solid;
+  width: 10vw;
+  margin-left: calc(10vw / 2);
+  margin-top: 1rem;
+  height: 3rem;
+  transition: transform 0.2s ease-in-out;
+  font-weight: bold;
+  text-shadow: 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black,
+    0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black,
+    0 0 3px black, 0 0 3px black, 0 0 3px black;
+}
+
+.enhance-button:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.enhance-button:hover {
+  background: linear-gradient(#907f6b, 10%, #2a2418, 90%, #907f6b) no-repeat border-box;
+}
+
+.enchance-divider {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 15rem;
+}

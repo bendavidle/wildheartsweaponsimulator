@@ -1,0 +1,70 @@
+<div class="container">
+  <drag-scroll
+    #scroller
+    style="width: 100vw; height: 100vh; overflow: hidden"
+    [scrollbar-hidden]="true"
+    scroll
+    (dragStart)="onScrollStart()"
+    (dragEnd)="onScrollEnd()">
+    <div [ngClass]="[fullScreen ? 'tree-full' : 'tree']" #tree>
+      <weapon-node
+        #node
+        *ngFor="let node of weaponNodes"
+        [id]="node.id"
+        (nodeHover)="showInfo($event)"
+        (nodeClick)="nodeClick($event)"
+        [node]="node"
+        [selected]="isSelected(node)"
+        [selection]="isInSelection(node)"
+        [disabled]="isDisabled(node)"
+        [fullScreen]="fullScreen"
+        [ngStyle]="{
+          'grid-column-start': node.position.x,
+          'grid-row-start': node.position.y
+        }"></weapon-node>
+    </div>
+  </drag-scroll>
+
+  <weapon-card
+    *ngIf="show && node && !enhancing && node.id !== selectedNode.id"
+    [node]="node"
+    [selectedNode]="selectedNode"></weapon-card>
+  <weapon-card
+    *ngIf="show && node && !enhancing && node.id === selectedNode.id"
+    [node]="node"></weapon-card>
+  <div class="menu-buttons">
+    <button class="menu-button" (click)="onZoomOutClick()" matTooltip="Toggle Zoom">
+      <mat-icon>open_in_full</mat-icon>
+    </button>
+    <button class="menu-button" (click)="onResetClick()" matTooltip="Reset Tree">
+      <mat-icon>restore</mat-icon>
+    </button>
+  </div>
+</div>
+
+<div *ngIf="enhancing && node" class="weapon-compare" (click)="cancelEnhancing($event)">
+  <div class="inner-compare">
+    <!-- set 'node' to event.node for clicked node -->
+    <span class="compare-card">
+      <weapon-card
+        [node]="selectedNode"
+        [compareNode]="node"
+        [compareMode]="true"
+        [prevNode]="true"
+        (skillClick)="onSkillClick($event)"></weapon-card>
+      <button class="enhance-button" (click)="enhanceClick(node)">Enchance</button>
+    </span>
+    <span class="enchance-divider">
+      <img src="../../assets/enhance-arrow.png" />
+    </span>
+    <span class="compare-card">
+      <weapon-card
+        *ngIf="node"
+        [node]="node"
+        [selectedNode]="selectedNode"
+        [compareMode]="true"></weapon-card>
+    </span>
+  </div>
+</div>
+
+<canvas class="line-canvas" #lineCanvas></canvas>

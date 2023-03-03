@@ -1,0 +1,14 @@
+<div
+  [ngClass]="[
+    selected || selection ? 'node-selected-glow' : 'node-glow',
+    selection ? 'node-selection' : '',
+    disabled ? 'disabled' : '',
+    fullScreen ? 'node-full' : 'node',
+    getRankStyle()
+  ]"
+  (click)="onNodeClick($event)"
+  (mouseover)="onNodeHover(true)"
+  (mouseout)="onNodeHover(false)">
+  <div #anchor class="anchor"></div>
+  <div class="img"></div>
+</div>

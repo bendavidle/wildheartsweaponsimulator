@@ -1,0 +1,29 @@
+li {
+  display: flex;
+  background: linear-gradient(
+        0.25turn,
+        rgba(255, 255, 255, 0.8),
+        2%,
+        transparent,
+        99%,
+        rgb(255, 255, 255, 0.8)
+      )
+      no-repeat border-box,
+    linear-gradient(#907f6b, 10%, #2a2418, 90%, #907f6b) no-repeat border-box;
+  border: black 2px solid;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  transition: all 0.2s ease-in-out;
+  font-weight: bold;
+  text-shadow: 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black,
+    0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black,
+    0 0 3px black, 0 0 3px black, 0 0 3px black;
+}
+
+li:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}

@@ -1,0 +1,149 @@
+.weapon {
+  display: flex;
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  gap: 1rem;
+  padding: 1rem;
+  height: 80%;
+  width: 30%;
+  z-index: 2;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(#a5926e, 20%, rgba(0, 0, 0, 0.473), 80%, #35312c);
+  box-shadow: inset 0 0 6px #c5a987;
+  color: #eeebda;
+  font-weight: bold;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  pointer-events: none;
+}
+
+.weapon-compare {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(#a5926e, 20%, rgba(0, 0, 0, 0.473), 80%, #35312c);
+  box-shadow: inset 0 0 6px #c5a987;
+  color: #eeebda;
+  font-weight: bold;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.weapon-info {
+  display: flex;
+}
+
+.weapon-attributes {
+  width: 50%;
+  margin-left: auto;
+}
+
+.weapon-attributes > ul > li {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #eeebda;
+  margin-bottom: 1rem;
+}
+
+.attributes {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(3, 1vw);
+  text-align: end;
+  padding-right: 1rem;
+  column-gap: 1rem;
+}
+
+.attributes-single {
+  float: right;
+  text-align: end;
+  padding-right: 1rem;
+  column-gap: 1rem;
+}
+
+.weapon-attributes > ul {
+  width: 100%;
+}
+
+.material-entry {
+  display: flex;
+}
+
+.material-cost {
+  margin-left: auto;
+}
+
+.weapon-section {
+  display: flex;
+  width: 100%;
+  min-height: 20%;
+  flex-direction: column;
+}
+
+.weapon-materials {
+  margin-top: auto;
+}
+
+.weapon-header {
+  text-align: center;
+  width: 100%;
+  border-bottom: 2px #eeebda solid;
+  margin-bottom: 1rem;
+}
+
+.weapon-attributes {
+  display: flex;
+}
+
+.weapon-image {
+  flex-grow: 1;
+}
+
+.skill-slot {
+  display: flex;
+  height: 1.5rem;
+  background: linear-gradient(0.25turn, transparent, 10%, rgba(0, 0, 0, 0.7), 90%, transparent);
+}
+
+.skill-slots {
+  display: flex;
+  gap: 0.25rem;
+  flex-direction: column;
+}
+
+.inherent-skills {
+  display: flex;
+}
+
+.inherited-skills {
+  display: flex;
+}
+
+.skill-name {
+  margin-left: 3rem;
+  align-self: center;
+}
+
+.skill-value {
+  margin-left: auto;
+  align-self: center;
+  padding-right: 0.25rem;
+}
+
+.skill-enhance {
+  border: red;
+}
+
+.skill-enhance:hover {
+  cursor: pointer;
+  box-shadow: 0 0 5px 0 gold;
+}
+
+.skill-disabled {
+  filter: brightness(50%);
+}

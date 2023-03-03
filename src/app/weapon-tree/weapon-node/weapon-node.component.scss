@@ -1,0 +1,134 @@
+$rank-1-inner: rgba(30, 30, 30, 0.6);
+$rank-2-inner: rgba(55, 52, 36, 0.6);
+$rank-3-inner: rgba(58, 70, 82, 0.6);
+$rank-4-inner: rgba(54, 44, 56, 0.6);
+$rank-5-inner: rgba(30, 30, 30, 0.6);
+$rank-6-inner: rgba(30, 30, 30, 0.6);
+
+$rank-1-outer: rgb(103, 93, 85);
+$rank-2-outer: rgb(114, 107, 69);
+$rank-3-outer: rgb(84, 110, 139);
+$rank-4-outer: rgb(82, 64, 85);
+$rank-5-outer: #675d55;
+$rank-6-outer: #675d55;
+
+:host {
+  position: relative;
+}
+
+.node {
+  display: flex;
+  height: 5vw;
+  width: 5vw;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgba(31, 28, 25, 0.9);
+  transition: transform 0.2s ease-in-out;
+}
+
+.node-full {
+  display: flex;
+  height: 3vw;
+  width: 3vw;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.node-rank-1 {
+  background: radial-gradient(
+    circle at center,
+    $rank-1-inner,
+    $rank-1-inner 50%,
+    $rank-1-outer 100%,
+    $rank-1-inner 75%
+  );
+}
+
+.node-rank-2 {
+  background: radial-gradient(
+    circle at center,
+    $rank-2-inner,
+    $rank-2-inner 50%,
+    $rank-2-outer 75%,
+    $rank-2-inner 75%
+  );
+}
+
+.node-rank-3 {
+  background: radial-gradient(
+    circle at center,
+    $rank-3-inner,
+    $rank-3-inner 50%,
+    $rank-3-outer 75%,
+    $rank-3-inner 75%
+  );
+}
+
+.node-rank-4 {
+  background: radial-gradient(
+    circle at center,
+    $rank-4-inner,
+    $rank-4-inner 50%,
+    $rank-4-outer 75%,
+    $rank-4-inner 75%
+  );
+}
+
+.node-rank-5 {
+  background: radial-gradient(
+    circle at center,
+    $rank-5-inner,
+    $rank-5-inner 50%,
+    $rank-5-outer 75%,
+    $rank-5-inner 75%
+  );
+}
+
+.node-rank-6 {
+  background: radial-gradient(
+    circle at center,
+    $rank-6-inner,
+    $rank-6-inner 50%,
+    $rank-6-outer 75%,
+    $rank-6-inner 75%
+  );
+}
+
+.disabled {
+  opacity: 1;
+  filter: brightness(50%);
+}
+
+.node-selection {
+  transform: scale(0.5);
+  background: radial-gradient(
+    circle at center,
+    rgb(22, 223, 165),
+    #16dfa5 50%,
+    #675d55 75%,
+    rgb(22, 223, 165)
+  );
+  border: 2px solid rgba(31, 28, 25, 0.9);
+}
+
+.node-selection:hover {
+  transform: scale(0.6);
+  cursor: pointer;
+}
+
+.node:not(.node-selection):hover {
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.node-glow {
+  box-shadow: 0 0 0 3px #675d55, 0 0 5px 3px black;
+}
+
+.node-selected-glow {
+  box-shadow: 0 0 3px 3px #c5f9f1, 0 0 2vw 5px #43d98f;
+}
