@@ -196,4 +196,120 @@ export const Skills: Skill[] = [
     id: 48,
     name: 'Critical Chain',
   },
+  {
+    id: 49,
+    name: 'Belligerence: Fury',
+  },
+  {
+    id: 50,
+    name: 'Hawk Eye',
+  },
+  {
+    id: 51,
+    name: 'Stowed Weapon Art',
+  },
+  {
+    id: 52,
+    name: 'Eagle Eye',
+  },
+  {
+    id: 53,
+    name: 'Entangler',
+  },
+  {
+    id: 54,
+    name: 'Flame Wielder',
+  },
+  {
+    id: 55,
+    name: 'Sleep Wielder',
+  },
+  {
+    id: 56,
+    name: 'Ukemi Art',
+  },
+  {
+    id: 57,
+    name: 'Extreme Archery',
+  },
+  {
+    id: 58,
+    name: 'Battle Spirit',
+  },
+  {
+    id: 59,
+    name: 'Fusion Reaper',
+  },
+  {
+    id: 60,
+    name: 'Destiny',
+  },
+  {
+    id: 61,
+    name: 'Broken Beast Screaming Arrow',
+  },
+  {
+    id: 62,
+    name: 'Strong Arm: Remedy',
+  },
+  {
+    id: 63,
+    name: 'Strong Arm: Body',
+  },
+  {
+    id: 64,
+    name: 'Ice Wielder',
+  },
+  {
+    id: 65,
+    name: 'Recovery Boost',
+  },
+  {
+    id: 66,
+    name: 'Vengeance',
+  },
+  {
+    id: 67,
+    name: 'Stowed Weapon Boost: Ironclad',
+  },
+  {
+    id: 68,
+    name: 'Ephemeral Lightning Arrow',
+  },
+  {
+    id: 69,
+    name: 'Verve',
+  },
+  {
+    id: 70,
+    name: 'Rally: Ironclad',
+  },
+  {
+    id: 71,
+    name: 'Desperation',
+  },
+  {
+    id: 72,
+    name: 'Connoisseur',
+  },
+  {
+    id: 73,
+    name: 'Acquisition Art',
+  },
+  {
+    id: 74,
+    name: 'Deep Arrow',
+  },
+  {
+    id: 75,
+    name: 'Inversion Attack',
+  },
+  {
+    id: 76,
+    name: 'Benevolence',
+  },
+  {
+    id: 77,
+    name: 'Time Changer',
+  },
 ];

@@ -133,7 +133,7 @@ export const Materials: Material[] = [
   {
     id: 26,
     name: 'Giant Kemono Gem',
-    source: 'Slaying Giant Mining',
+    source: 'Slaying Giant Kemono',
   },
   {
     id: 27,
@@ -339,5 +339,485 @@ export const Materials: Material[] = [
     id: 67,
     name: 'Golden Hematite',
     source: 'Mining',
+  },
+  {
+    id: 68,
+    name: 'Saturated Spineglider Dripstone',
+    source: 'Mighty Spineglider',
+  },
+  {
+    id: 69,
+    name: 'Spineglider Patagium',
+    source: 'Mighty Spineglider',
+  },
+  {
+    id: 70,
+    name: 'Large Piece of Ore',
+    source: 'Mining',
+  },
+  {
+    id: 71,
+    name: 'Gritdog Hard Iron Nugget',
+    source: 'Mighty Gritdog',
+  },
+  {
+    id: 72,
+    name: 'Tall Dreadclaw Corona',
+    source: 'Mighty Dreadclaw',
+  },
+  {
+    id: 73,
+    name: 'Dreadclaw Beak',
+    source: 'Mighty Dreadclaw',
+  },
+  {
+    id: 74,
+    name: 'Giant Kemono Petal',
+    source: 'Slaying Giant Kemono',
+  },
+  {
+    id: 75,
+    name: 'Pearlbeak Razor Wing',
+    source: 'Pearlbeak',
+  },
+  {
+    id: 76,
+    name: 'Pearlbeak Light Orb',
+    source: 'Pearlbeak',
+  },
+  {
+    id: 77,
+    name: 'Hard Ragetail Fang',
+    source: 'Mighty Ragetail',
+  },
+  {
+    id: 78,
+    name: 'Ragetail Whiskers',
+    source: 'Mighty Ragetail',
+  },
+  {
+    id: 79,
+    name: 'Sharp Kingtusk Ivory',
+    source: 'Mighty Kingtusk',
+  },
+  {
+    id: 80,
+    name: 'Thick Kingtusk Thorn',
+    source: 'Mighty Kingtusk',
+  },
+  {
+    id: 81,
+    name: 'Kingtusk Hoof',
+    source: 'Mighty Kingtusk',
+  },
+  {
+    id: 82,
+    name: 'Thick Gritdog Incisor',
+    source: 'Mighty Gritdog',
+  },
+  {
+    id: 83,
+    name: 'Gritdog Gastric Wall',
+    source: 'Mighty Gritdog',
+  },
+  {
+    id: 84,
+    name: 'Lavaback Fire Rock',
+    source: 'Mighty Lavaback',
+  },
+  {
+    id: 85,
+    name: 'Long Lavaback Tail',
+    source: 'Mighty Lavaback',
+  },
+  {
+    id: 86,
+    name: 'Thich Lavaback Beard',
+    source: 'Mighty Lavaback',
+  },
+  {
+    id: 87,
+    name: 'Lump Of Ore',
+    source: 'Mining',
+  },
+  {
+    id: 88,
+    name: 'Sporetail Hide',
+    source: 'Sporetail',
+  },
+  {
+    id: 89,
+    name: 'Thick Sporetail Stipe',
+    source: 'Mighty Sporetail',
+  },
+  {
+    id: 90,
+    name: 'Sporetail Whiskers',
+    source: 'Mighty Sporetail',
+  },
+  {
+    id: 91,
+    name: 'Sharp Spineglider Horn',
+    source: 'Mighty Spineglider',
+  },
+  {
+    id: 92,
+    name: 'Gleaming Pet Kemono Shell',
+    source: 'Pet Kemono',
+  },
+  {
+    id: 93,
+    name: 'Sharp Dreadclaw Talon',
+    source: 'Mighty Dreadclaw',
+  },
+  {
+    id: 94,
+    name: 'Dreadclaw Sickle Feather',
+    source: 'Mighty Dreadclaw',
+  },
+  {
+    id: 95,
+    name: 'Dreadclaw Sickle Feather',
+    source: 'Mighty Dreadclaw',
+  },
+  {
+    id: 96,
+    name: 'Sharp Pearlbeak Bill',
+    source: 'Pearlbeak',
+  },
+  {
+    id: 97,
+    name: 'Long Pearlbeak Tail Feather',
+    source: 'Pearlbeak',
+  },
+  {
+    id: 98,
+    name: 'Sharp Pearlbeak Talon',
+    source: 'Pearlbeak',
+  },
+  {
+    id: 99,
+    name: 'Thick Sapscourge Beard',
+    source: 'Mighty Sapscourge',
+  },
+  {
+    id: 100,
+    name: 'Lustrous Sapscourge Amber',
+    source: 'Mighty Sapscourge',
+  },
+  {
+    id: 101,
+    name: 'Sapscourge Claw',
+    source: 'Mighty Sapscourge',
+  },
+  {
+    id: 102,
+    name: 'Long Goldshard Tail',
+    source: 'Mighty Goldshard',
+  },
+  {
+    id: 103,
+    name: 'Spinous Goldshard Hide',
+    source: 'Mighty Goldshard',
+  },
+  {
+    id: 104,
+    name: 'Sharp Goldshard Spine',
+    source: 'Mighty Goldshard',
+  },
+  {
+    id: 105,
+    name: 'Venomglider Bloom Claw',
+    source: 'Venomglider',
+  },
+  {
+    id: 106,
+    name: 'Venomglider Toxic Lintel',
+    source: 'Venomglider',
+  },
+  {
+    id: 107,
+    name: 'Venomglider Patagium',
+    source: 'Venomglider',
+  },
+  {
+    id: 108,
+    name: 'Ripclaw Corona Spray',
+    source: 'Ripclaw',
+  },
+  {
+    id: 109,
+    name: 'Ripclaw Sickle Feather',
+    source: 'Ripclaw',
+  },
+  {
+    id: 110,
+    name: 'Ripclaw Bloom Beak',
+    source: 'Ripclaw',
+  },
+  {
+    id: 111,
+    name: 'Sharp Ripclaw Talon',
+    source: 'Ripclaw',
+  },
+  {
+    id: 112,
+    name: 'Sharp Ripclaw Talon',
+    source: 'Ripclaw',
+  },
+  {
+    id: 113,
+    name: 'Hard Sporetail Fang',
+    source: 'Mighty Sporetail',
+  },
+  {
+    id: 114,
+    name: 'Amaterasu Backbone',
+    source: 'Amaterasu',
+  },
+  {
+    id: 115,
+    name: 'Diabolic Amaterasu Horn',
+    source: 'Amaterasu',
+  },
+  {
+    id: 116,
+    name: 'Diabolic Amaterasu Beak',
+    source: 'Amaterasu',
+  },
+  {
+    id: 117,
+    name: 'Venomglider Bloom Horn',
+    source: 'Venomglider',
+  },
+  {
+    id: 118,
+    name: 'Glacial Deathstalker Icicle',
+    source: 'Mighty Deathstalker',
+  },
+  {
+    id: 119,
+    name: 'Deathstalker Floe Tail',
+    source: 'Mighty Deathstalker',
+  },
+  {
+    id: 120,
+    name: 'Fumebeak Razor Wing',
+    source: 'Mighty Fumebeak',
+  },
+  {
+    id: 121,
+    name: 'Long Fumebeak Tail Feather',
+    source: 'Mighty Fumebeak',
+  },
+  {
+    id: 122,
+    name: 'Fumebeak Heavily Toxic Lung',
+    source: 'Mighty Fumebeak',
+  },
+  {
+    id: 123,
+    name: 'Fumebeak Rib Stone',
+    source: 'Mighty Fumebeak',
+  },
+  {
+    id: 124,
+    name: 'Sharped Icetusk Frost Limb',
+    source: 'Mighty Icetusk',
+  },
+  {
+    id: 125,
+    name: 'Icetusk Hoof',
+    source: 'Mighty Icetusk',
+  },
+  {
+    id: 126,
+    name: 'Amaterasu Bast',
+    source: 'Amaterasu',
+  },
+  {
+    id: 127,
+    name: 'Diabolic Amaterasu Talon',
+    source: 'Amaterasu',
+  },
+  {
+    id: 128,
+    name: 'Giant Kemono Essential Oil',
+    source: 'Slaying Giant Kemono',
+  },
+  {
+    id: 129,
+    name: 'Sharp Lavaback Fang',
+    source: 'Mighty Lavaback',
+  },
+  {
+    id: 130,
+    name: 'Lavaback Hide',
+    source: 'Mighty Lavaback',
+  },
+  {
+    id: 131,
+    name: 'Crustaceous Moss',
+    source: 'Small Kemono',
+  },
+  {
+    id: 132,
+    name: 'Cobalt Lavaback Liquid Rock',
+    source: 'Mighty Cobalt Lavaback',
+  },
+  {
+    id: 133,
+    name: 'Onyxshard Rock Claw',
+    source: 'Onyxshard',
+  },
+  {
+    id: 134,
+    name: 'Onyxshard Spine',
+    source: 'Onyxshard',
+  },
+  {
+    id: 135,
+    name: 'Onyxshard Tail',
+    source: 'Onyxshard',
+  },
+  {
+    id: 136,
+    name: 'Onyxshard Rock Incisor',
+    source: 'Onyxshard',
+  },
+  {
+    id: 137,
+    name: 'Spinous Onyxshard Hide',
+    source: 'Onyxshard',
+  },
+  {
+    id: 138,
+    name: 'Freezing Icetusk Ivory',
+    source: 'Mighty Icetusk',
+  },
+  {
+    id: 139,
+    name: 'Icetusk Horn',
+    source: 'Mighty Icetusk',
+  },
+  {
+    id: 140,
+    name: 'Golden Tempest Celestial Robe',
+    source: 'Golden Tempest',
+  },
+  {
+    id: 141,
+    name: 'Golden Tempest Auric Claw',
+    source: 'Golden Tempest',
+  },
+  {
+    id: 142,
+    name: 'Golden Tempest Auric Ruff',
+    source: 'Golden Tempest',
+  },
+  {
+    id: 143,
+    name: 'Diabolic Amaterasu Tail',
+    source: 'Amaterasu',
+  },
+  {
+    id: 144,
+    name: 'Emberplume Fire Crown',
+    source: 'Emberplume',
+  },
+  {
+    id: 145,
+    name: 'Emberplume Fire Claw',
+    source: 'Emberplume',
+  },
+  {
+    id: 146,
+    name: 'Emberplume Fire Beak',
+    source: 'Emberplume',
+  },
+  {
+    id: 147,
+    name: 'Pet Kemono Tail Feather',
+    source: 'Pet Kemono',
+  },
+  {
+    id: 148,
+    name: 'Snapspine Cotton',
+    source: 'Small Kemono',
+  },
+  {
+    id: 149,
+    name: 'Serpent Flotation Cutis',
+    source: 'Small Kemono',
+  },
+  {
+    id: 150,
+    name: 'Frozen Deathstalker Pelt',
+    source: 'Mighty Deathstalker',
+  },
+  {
+    id: 151,
+    name: 'Icy Deathstalker Fang',
+    source: 'Mighty Deathstalker',
+  },
+  {
+    id: 152,
+    name: 'Deathstalker Ice Water',
+    source: 'Mighty Deathstalker',
+  },
+  {
+    id: 153,
+    name: 'Steely Golden Tempest Hide',
+    source: 'Golden Tempest',
+  },
+  {
+    id: 154,
+    name: 'Golden Tempest Tail',
+    source: 'Golden Tempest',
+  },
+  {
+    id: 155,
+    name: 'Scarlet Pet Kemono Spores',
+    source: 'Pet Kemono',
+  },
+  {
+    id: 156,
+    name: 'Emberplume Wing Feather',
+    source: 'Emberplume',
+  },
+  {
+    id: 157,
+    name: 'Emberplume Tail Feather',
+    source: 'Emberplume',
+  },
+  {
+    id: 158,
+    name: 'Cobalt Lavaback Bristle',
+    source: 'Mighty Cobalt Lavaback',
+  },
+  {
+    id: 159,
+    name: 'Celestial Dragon Scale',
+    source: 'Celestial Dragon',
+  },
+  {
+    id: 160,
+    name: 'Celestial Dragon Claw',
+    source: 'Celestial Dragon',
+  },
+  {
+    id: 161,
+    name: 'Celestial Dragon Essence',
+    source: 'Celestial Dragon',
+  },
+  {
+    id: 162,
+    name: 'Celestial Dragon Limb',
+    source: 'Celestial Dragon',
+  },
+  {
+    id: 163,
+    name: 'Celestial Dragon Tail',
+    source: 'Celestial Dragon',
   },
 ];

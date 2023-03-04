@@ -2,15 +2,15 @@ $rank-1-inner: rgba(30, 30, 30, 0.6);
 $rank-2-inner: rgba(55, 52, 36, 0.6);
 $rank-3-inner: rgba(58, 70, 82, 0.6);
 $rank-4-inner: rgba(54, 44, 56, 0.6);
-$rank-5-inner: rgba(30, 30, 30, 0.6);
-$rank-6-inner: rgba(30, 30, 30, 0.6);
+$rank-5-inner: rgba(118, 97, 49, 0.6);
+$rank-6-inner: rgba(132, 124, 86, 0.6);
 
 $rank-1-outer: rgb(103, 93, 85);
 $rank-2-outer: rgb(114, 107, 69);
 $rank-3-outer: rgb(84, 110, 139);
 $rank-4-outer: rgb(82, 64, 85);
-$rank-5-outer: #675d55;
-$rank-6-outer: #675d55;
+$rank-5-outer: rgb(141, 113, 62);
+$rank-6-outer: rgb(98, 115, 89);
 
 :host {
   position: relative;
@@ -38,63 +38,27 @@ $rank-6-outer: #675d55;
 }
 
 .node-rank-1 {
-  background: radial-gradient(
-    circle at center,
-    $rank-1-inner,
-    $rank-1-inner 50%,
-    $rank-1-outer 100%,
-    $rank-1-inner 75%
-  );
+  background: radial-gradient(circle at center, $rank-1-inner, $rank-1-inner 50%, $rank-1-outer 100%, $rank-1-inner 75%);
 }
 
 .node-rank-2 {
-  background: radial-gradient(
-    circle at center,
-    $rank-2-inner,
-    $rank-2-inner 50%,
-    $rank-2-outer 75%,
-    $rank-2-inner 75%
-  );
+  background: radial-gradient(circle at center, $rank-2-inner, $rank-2-inner 50%, $rank-2-outer 75%, $rank-2-inner 75%);
 }
 
 .node-rank-3 {
-  background: radial-gradient(
-    circle at center,
-    $rank-3-inner,
-    $rank-3-inner 50%,
-    $rank-3-outer 75%,
-    $rank-3-inner 75%
-  );
+  background: radial-gradient(circle at center, $rank-3-inner, $rank-3-inner 50%, $rank-3-outer 75%, $rank-3-inner 75%);
 }
 
 .node-rank-4 {
-  background: radial-gradient(
-    circle at center,
-    $rank-4-inner,
-    $rank-4-inner 50%,
-    $rank-4-outer 75%,
-    $rank-4-inner 75%
-  );
+  background: radial-gradient(circle at center, $rank-4-inner, $rank-4-inner 50%, $rank-4-outer 75%, $rank-4-inner 75%);
 }
 
 .node-rank-5 {
-  background: radial-gradient(
-    circle at center,
-    $rank-5-inner,
-    $rank-5-inner 50%,
-    $rank-5-outer 75%,
-    $rank-5-inner 75%
-  );
+  background: radial-gradient(circle at center, $rank-5-inner, $rank-5-inner 50%, $rank-5-outer 75%, $rank-5-inner 75%);
 }
 
 .node-rank-6 {
-  background: radial-gradient(
-    circle at center,
-    $rank-6-inner,
-    $rank-6-inner 50%,
-    $rank-6-outer 75%,
-    $rank-6-inner 75%
-  );
+  background: radial-gradient(circle at center, $rank-6-inner, $rank-6-inner 50%, $rank-6-outer 75%, $rank-6-inner 75%);
 }
 
 .disabled {
@@ -104,13 +68,7 @@ $rank-6-outer: #675d55;
 
 .node-selection {
   transform: scale(0.5);
-  background: radial-gradient(
-    circle at center,
-    rgb(22, 223, 165),
-    #16dfa5 50%,
-    #675d55 75%,
-    rgb(22, 223, 165)
-  );
+  background: radial-gradient(circle at center, rgb(22, 223, 165), #16dfa5 50%, #675d55 75%, rgb(22, 223, 165));
   border: 2px solid rgba(31, 28, 25, 0.9);
 }
 
