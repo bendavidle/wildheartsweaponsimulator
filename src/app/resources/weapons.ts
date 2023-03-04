@@ -2591,7 +2591,7 @@ export const BowNodes: WeaponNode[] = [
       x: 17,
       y: 9,
     },
-    connectedNodes: [42, 49],
+    connectedNodes: [42, 59],
     rank: 3,
   },
   {
