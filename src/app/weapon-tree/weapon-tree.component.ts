@@ -119,7 +119,7 @@ export class WeaponTreeComponent implements OnInit, OnDestroy, AfterViewInit {
   }
 
   ngAfterViewInit(): void {
-    this.#scrollToNode(this.selectedNode);
+    this.#scrollToNode(this.weaponNodes[0]);
     this.ctx = this.lineCanvas.nativeElement.getContext('2d');
     this.lineCanvas.nativeElement.width = this.tree.nativeElement.offsetWidth;
     this.lineCanvas.nativeElement.height = this.tree.nativeElement.offsetHeight;
