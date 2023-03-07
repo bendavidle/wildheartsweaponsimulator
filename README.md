@@ -30,7 +30,6 @@
 
 - ![0%](https://progress-bar.dev/0?title=Katana%20%20%20%20%20%20%20%20%20)
 - ![0%](https://progress-bar.dev/0?title=Nodachi%20%20%20%20%20%20%20%20)
-- ![0%](https://progress-bar.dev/0?title=Katana%20%20%20%20%20%20%20%20%20)
 - ![100%](https://progress-bar.dev/100?title=Bow%20%20%20%20%20%20%20%20%20%20%20%20)
 - ![0%](https://progress-bar.dev/0?title=Maul%20%20%20%20%20%20%20%20%20%20%20)
 - ![0%](https://progress-bar.dev/0?title=Bladed%20Wasaga%20%20)
